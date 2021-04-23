@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,26 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
 
+    <link rel="stylesheet" href="./src/components/Header/header.css">
+
+    <link rel="stylesheet" href="./src/components/Hamburger/hamburger.css">
+
     <script src="./src/js/app.js" defer></script>
 </head>
 
 <body>
+    <header class="static-header">
+        <div class="static-header__logo">
+            <a href="/index.html">
+                <img src="./src/assets/img/logo.jpg" alt="Logo">
+            </a>
+        </div>
 
+        <div class="static-header__hamburger">
+            <input type="checkbox" id="hamburger" hidden>
+            <label for="hamburger" class="hamburger"></label>
+        </div>
+    </header>
 </body>
 
 </html>
