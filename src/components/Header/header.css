@@ -1,4 +1,4 @@
-.header {
+.header, .header--white {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,6 +10,17 @@
     z-index: 1;
 
     background-color: hsla(0, 0%, 0%, 0.1);
+}
+
+.header--white {
+    position: initial;
+    
+    background-color: white;
+}
+
+.header--white a {
+    color: hsl(0, 0%, 10%) !important;
+    text-shadow: none !important;
 }
 
 .header__logo, .header__contacts {
