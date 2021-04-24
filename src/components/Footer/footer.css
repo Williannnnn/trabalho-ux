@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    position: absolute;
+
+    margin-top: 200px;
+    padding: 1em 0;
+
+    color: white;
+
+    background-color: hsl(0, 0%, 20%);
+}
+
+.footer__logo, .footer__nav, .footer__contacts {
+    display: grid;
+    justify-content: center;
+
+    width: 100%;
+    margin: 1em;
+}
+
+.footer__nav-menu li, .footer__contacts-menu li {
+    margin: .1em;
+    padding: .1em;
+}
+.footer__nav-menu a, .footer__contacts-menu a {
+    display: block;
+
+    color: hsl(0, 0%, 90%);
+}
+
+@media (min-width: 769px) {
+    .footer {
+        flex-wrap: nowrap;
+    }
+    .footer__logo, .footer__nav, .footer__contacts {
+        width: calc(100% * (1/3));
+    }
+}

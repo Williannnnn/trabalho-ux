@@ -12,7 +12,7 @@
     background-color: hsla(0, 0%, 0%, 0.1);
 }
 
-.header__logo, .header__social-medias {
+.header__logo, .header__contacts {
     width: 20%;
     padding: 0 1em;
 }
@@ -24,7 +24,7 @@
     padding: 0 0.2em;
 }
 
-.header__nav, .header__social-medias {
+.header__nav, .header__contacts {
     display: none;
 }
 .header__nav {
@@ -32,21 +32,21 @@
 }
 
 .header__menu,
-.header__social-medias > ul {
+.header__contacts ul {
     display: flex;
     justify-content: center;
 }
 
-.header__social-medias > ul {
+.header__contacts ul {
     justify-content: right;
 }
 
-.header__menu li, .header__social-medias li {
+.header__menu li, .header__contacts li {
     width: max-content;
     margin: 0 .5em;
 }
 
-.header__menu a, .header__social-medias a {
+.header__menu a, .header__contacts a {
     display: block;
 
     color: aliceblue;
@@ -55,7 +55,7 @@
 
 @media (min-width: 769px) {
     .header__nav,
-    .header__social-medias {
+    .header__contacts {
         display: block;
     }   
 }
