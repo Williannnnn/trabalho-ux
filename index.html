@@ -15,22 +15,48 @@
 
     <link rel="stylesheet" href="./src/components/Hamburger/hamburger.css">
 
+    <link rel="stylesheet" href="./src/components/Banner/banner.css">
+
     <script src="./src/js/app.js" defer></script>
 </head>
 
 <body>
-    <header class="static-header">
-        <div class="static-header__logo">
-            <a href="/index.html">
+    <header class="header full-width">
+        <div class="header__logo full-height">
+            <a class="full-size" href="/index.html">
                 <img src="./src/assets/img/logo.jpg" alt="Logo">
             </a>
         </div>
 
-        <div class="static-header__hamburger">
+        <div class="header__hamburger full-height">
             <input type="checkbox" id="hamburger" hidden>
             <label for="hamburger" class="hamburger"></label>
         </div>
+
+        <nav class="header__nav full-height">
+            <ul class="header__menu">
+                <li><a class="full-size" href="/index.html"> Home </a></li>
+                <li><a class="full-size" href="/services.html"> Serviços </a></li>
+                <li><a class="full-size" href="/about-us.html"> Sobre Nós </a></li>
+                <li><a class="full-size" href="/contacts.html"> Contatos </a></li>
+            </ul>
+        </nav>
+
+        <div class="header__social-medias full-height">
+            <ul>
+                <li><a href="#"> F </a></li>
+                <li><a href="#"> In </a></li>
+            </ul>
+        </div>
     </header>
+
+    <section class="banner">
+        <div class="banner__phrase">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+    </section>
 </body>
 
 </html>

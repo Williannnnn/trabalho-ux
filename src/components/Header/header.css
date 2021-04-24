@@ -1,30 +1,61 @@
-.static-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     position: absolute;
 
-    width: 100%;
-    height: 4em;
+    padding: 1em 0;
 
-    background-color: hsl(0, 0%, 90%);
+    z-index: 1;
+
+    background-color: hsla(0, 0%, 0%, 0.1);
 }
 
-.static-header__logo {
-    width: 25%;
-    height: 100%;
+.header__logo, .header__social-medias {
+    width: 20%;
+    padding: 0 1em;
 }
 
-.static-header__logo > a {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.static-header__logo > a > img {
-    width: clamp(10ch, 50%, 15ch);
+.header__logo > a > img {
+    width: 10ch;
     height: 80%;
     margin: auto;
     padding: 0 0.2em;
+}
+
+.header__nav, .header__social-medias {
+    display: none;
+}
+.header__nav {
+    width: 60%;
+}
+
+.header__menu,
+.header__social-medias > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header__social-medias > ul {
+    justify-content: right;
+}
+
+.header__menu li, .header__social-medias li {
+    width: max-content;
+    margin: 0 .5em;
+}
+
+.header__menu a, .header__social-medias a {
+    display: block;
+
+    color: aliceblue;
+    text-shadow: .1em .1em .2em black;
+}
+
+@media (min-width: 769px) {
+    .header__nav,
+    .header__social-medias {
+        display: block;
+    }   
 }
