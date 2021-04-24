@@ -30,6 +30,8 @@
     color: white;
     text-transform: uppercase;
     text-shadow: 1px 1px .2em black;
+
+    cursor: default;
 }
 
 @media (min-width: 769px) {

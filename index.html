@@ -17,25 +17,27 @@
 
     <link rel="stylesheet" href="./src/components/Banner/banner.css">
 
+    <link rel="stylesheet" href="./src/components/Qualities/qualities.css">
+
     <link rel="stylesheet" href="./src/components/Footer/footer.css">
 
     <script src="./src/js/app.js" defer></script>
 </head>
 
 <body>
-    <header class="header full-width">
-        <div class="header__logo full-height">
+    <header class="full-width header">
+        <div class="full-height header__logo">
             <a class="full-size" href="/index.html">
                 <img src="./src/assets/img/logo.jpg" alt="Logo">
             </a>
         </div>
 
-        <div class="header__hamburger full-height">
+        <div class="full-height header__hamburger">
             <input type="checkbox" id="hamburger" hidden>
             <label for="hamburger" class="hamburger"></label>
         </div>
 
-        <nav class="header__nav full-height">
+        <nav class="full-height header__nav">
             <ul class="header__menu">
                 <li><a class="full-size" href="/index.html"> Home </a></li>
                 <li><a class="full-size" href="/pages/services.html"> Serviços </a></li>
@@ -44,7 +46,7 @@
             </ul>
         </nav>
 
-        <div class="header__social-medias header__contacts full-height">
+        <div class="full-height header__contacts">
             <ul>
                 <li><a href="#"> F </a></li>
                 <li><a href="#"> In </a></li>
@@ -60,7 +62,41 @@
         </div>
     </section>
 
-    <footer class="footer full-width">
+    <section class="full-width qualities">
+        <h1 class="full-width"> Nossas Qualidades </h1>
+
+        <article class="full-width qualities__quality">
+            <div class="qualities__image">
+                <img class="full-width" src="./src/assets/icons/dentist.png" alt="Quality Image">
+            </div>
+
+            <div class="qualities__description">
+                <p> Melhores Profissionais da Região </p>
+            </div>
+        </article>
+
+        <article class="full-width qualities__quality ">
+            <div class="qualities__image">
+                <img class="full-width" src="./src/assets/icons/equipment.png" alt="Quality Image">
+            </div>
+
+            <div class="qualities__description">
+                <p> Equipamentos de Alta Qualidade </p>
+            </div>
+        </article>
+        
+        <article class="full-width qualities__quality">
+            <div class="qualities__image">
+                <img class="full-width" src="./src/assets/icons/clean-tooth.png" alt="Quality Image">
+            </div>
+
+            <div class="qualities__description">
+                <p> Cuidados e Dicas para manter sua Saúde Bucal </p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="full-width footer">
         <div class="footer__logo">
             <img src="./src/assets/img/logo.jpg" alt="Logo">
         </div>
