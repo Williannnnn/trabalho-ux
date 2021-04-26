@@ -10,7 +10,7 @@
 
     color: white;
 
-    background-color: hsl(0, 0%, 20%);
+    background-color: var(--black);
 }
 
 .footer__logo, .footer__nav, .footer__contacts {
@@ -21,14 +21,19 @@
     margin: 1em;
 }
 
-.footer__nav-menu li, .footer__contacts-menu li {
-    margin: .1em;
-    padding: .1em;
+.footer__contacts-menu li img {
+    width: 24px;
+    height: 24px;
 }
+
+.footer__contacts-menu li * {
+    margin: 0 .1em;
+}
+
 .footer__nav-menu a, .footer__contacts-menu a {
     display: block;
 
-    color: hsl(0, 0%, 90%);
+    color: var(--white);
 }
 
 @media (min-width: 769px) {

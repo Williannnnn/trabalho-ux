@@ -8,18 +8,23 @@
 
     <title> Home </title>
 
+    <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
 
     <link rel="stylesheet" href="./src/components/Header/header.css">
-
     <link rel="stylesheet" href="./src/components/Hamburger/hamburger.css">
 
     <link rel="stylesheet" href="./src/components/Banner/banner.css">
 
     <link rel="stylesheet" href="./src/components/Qualities/qualities.css">
 
+    <link rel="stylesheet" href="./src/components/Contacts/contacts.css">
+
     <link rel="stylesheet" href="./src/components/Footer/footer.css">
+
+    <link rel="stylesheet" href="./src/css/components/List/list.css">
+    <link rel="stylesheet" href="./src/css/components/Title/title.css">
 
     <script src="./src/js/app.js" defer></script>
 </head>
@@ -54,7 +59,7 @@
         </div>
     </header>
 
-    <section class="banner">
+    <section class="full-width banner">
         <div class="banner__phrase">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -63,7 +68,7 @@
     </section>
 
     <section class="full-width qualities">
-        <h1 class="full-width"> Nossas Qualidades </h1>
+        <h1 class="title--border"> Nossas Qualidades </h1>
 
         <article class="full-width qualities__quality">
             <div class="qualities__image">
@@ -96,7 +101,32 @@
         </article>
     </section>
 
-    <footer class="full-width footer">
+    <section class="full-width contacts">
+        <h1 class="title--border"> Localização </h1>
+
+        <div class="full-width contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27869.948804606956!2d-51.184137!3d-29.172227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3e1bdbb078261826!2sFSG%20Centro%20Universit%C3%A1rio%20da%20Serra%20Ga%C3%BAcha%20%5BCampus%20Sede%5D!5e0!3m2!1spt-BR!2sbr!4v1619295271887!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="full-width contacts__list">
+            <ul class="list">
+                <li class="list__item">
+                    <img src="./src/assets/icons/google/phone_black_24dp.svg" alt="Telephone">
+                    <p> (99) 9 1293-4945 </p>
+                </li>
+                <li class="list__item">
+                    <img src="./src/assets/icons/google/place_black_24dp.svg" alt="">
+                    <p> R. Mal. Floriano </p>
+                </li>
+                <li class="list__item">
+                    <img src="./src/assets/icons/google/email_black_24dp.svg" alt="">
+                    <p> clinica@dental.com </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="full-width footer">       
         <div class="footer__logo">
             <img src="./src/assets/img/logo.jpg" alt="Logo">
         </div>
@@ -104,21 +134,30 @@
         <nav class="footer__nav">
             <h1> Navegação </h1>
 
-            <ul class="footer__nav-menu">
-                <li><a class="full-size" href="/index.html"> Home </a></li>
-                <li><a class="full-size" href="/pages/services.html"> Serviços </a></li>
-                <li><a class="full-size" href="/pages/about-us.html"> Sobre Nós </a></li>
-                <li><a class="full-size" href="/pages/contacts.html"> Contatos </a></li>
+            <ul class="list footer__nav-menu">
+                <li class="list__item"><a class="full-size" href="/index.html"> Home </a></li>
+                <li class="list__item"><a class="full-size" href="/pages/services.html"> Serviços </a></li>
+                <li class="list__item"><a class="full-size" href="/pages/about-us.html"> Sobre Nós </a></li>
+                <li class="list__item"><a class="full-size" href="/pages/contacts.html"> Contatos </a></li>
             </ul>
         </nav>
-
+        
         <div class="footer__contacts">
             <h1> Contatos </h1>
 
-            <ul class="footer__contacts-menu">
-                <li> (99) 9 1293-4945 </li>
-                <li><a href="#"> Facebook </a></li>
-                <li><a href="#"> Instagram </a></li>
+            <ul class="list footer__contacts-menu">
+                <li class="list__item">
+                    <img src="./src/assets/icons/google/phone_white_24dp.svg" alt="Telephone">
+                    <p> (99) 9 1293-4945 </p>
+                </li>
+                <li class="list__item">
+                    <img src="./src/assets/icons/google/facebook_white_24dp.svg" alt="Facebook">
+                    <a href="#"> Facebook </a>
+                </li>
+                <li class="list__item">
+                    <img src="./src/assets/icons/logo-instagram-1280px.webp" alt="Instagram">
+                    <a href="#"> Instagram </a>
+                </li>
             </ul>
         </div>
     </footer>
