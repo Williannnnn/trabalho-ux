@@ -5,6 +5,7 @@
 
     position: absolute;
 
+    width: 100%;
     padding: 1em 0;
 
     z-index: 1;
@@ -25,6 +26,7 @@
 
 .header__logo, .header__contacts {
     width: 20%;
+    height: 100%;
     padding: 0 1em;
 }
 
@@ -37,7 +39,9 @@
 
 .header__nav, .header__contacts {
     display: none;
+    height: 100%;
 }
+
 .header__nav {
     width: 60%;
 }
@@ -55,6 +59,16 @@
 .header__menu li, .header__contacts li {
     width: max-content;
     margin: 0 .5em;
+
+    transition: all 300ms ease;
+}
+
+.header__contacts :is(li, a, img) {
+    width: 24px;
+}
+
+.header__contacts li:hover {
+    transform: scale(1.1);
 }
 
 .header__menu a, .header__contacts a {

@@ -3,6 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    width: 100%;
     padding: 1em;
 
     color: var(--black);
@@ -15,6 +16,7 @@
 }
 
 .qualities__quality {
+    width: 100%;
     margin: 1em;
     padding: 1em;
 

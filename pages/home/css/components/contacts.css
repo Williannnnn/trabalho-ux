@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    width: 100%;
     padding: 1em;
 
     background-color: var(--white);
@@ -17,6 +18,8 @@
 .contacts__map, .contacts__list {
     display: flex;
     justify-content: center;
+
+    width: 100%;
 }
 
 .contacts__map iframe {
